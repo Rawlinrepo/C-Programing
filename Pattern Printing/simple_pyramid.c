@@ -342,21 +342,52 @@
 
 //--------------------------------------------------
 
+// Hollow Star Right Triangel Pattern
+// Star Pattern
+
+// int main(){
+//     int num = 10;
+//     for(int i = 1;i<=num;i++){
+//         for(int j=1;j<=i;j++){
+//             if( j == 1 || j == i || i == num){
+//                 printf("* ");
+//             }
+//             else{
+//                 printf("  ");
+//             }
+//         }
+//         printf("\n");
+//     }
+// }
+// * 
+// * *
+// *   *
+// *     *
+// *       *
+// *         *
+// *           *
+// *             *
+// *               *
+// * * * * * * * * * *
+
+//--------------------------------------------------
+
 // Hollow Star Pyramid Pattern
 // Star Pattern
 
 int main(){
     int num = 10;
     for(int i = 1;i<=num;i++){
-        for(int j=1;j<=i;j++){
-            if( j == 1 || j == i || i == num){
-                printf("* ");
-            }
-            else{
-                printf("  ");
-            }
+        for(int j = 10;j>i;j--)
+        printf(" ");
+
+        for(int k = 1;k<=i;k++)
+            if(k == 1 || k == i || i == num){
+            printf("* ");
+        }
+        else{
+            printf("  ");
         }
         printf("\n");
     }
 }
-
