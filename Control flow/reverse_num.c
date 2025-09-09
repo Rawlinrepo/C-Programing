@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
     int num,cnt = 0,num1,sum=0;
@@ -17,15 +16,8 @@ int main(){
     char arr[cnt + 1];
     sprintf(arr,"%d",num);
 
-    for(int i = 0;i < cnt ;i++){
+    for(int i = cnt - 1;i >= 0;i--){
         int digit = arr[i] - '0';
-        //printf("%d\n",digit);
-        sum = sum + pow(digit,cnt);
-    }
-    if(sum == num){
-    printf("%d is and armstrong number",num);
-    }
-    else{
-        printf("%d is not armstrong number",num);
+        printf("%d",digit);
     }
 }
