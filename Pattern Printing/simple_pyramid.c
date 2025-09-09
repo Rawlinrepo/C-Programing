@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+
 
 // Right Half Pyramid Pattern
 // Star Pattern
@@ -375,19 +377,66 @@
 // Hollow Star Pyramid Pattern
 // Star Pattern
 
+// int main(){
+//     int num = 10;
+//     for(int i = 1;i<=num;i++){
+//         for(int j = 10;j>i;j--)
+//         printf(" ");
+
+//         for(int k = 1;k<=i;k++)
+//             if(k == 1 || k == i || i == num){
+//             printf("* ");
+//         }
+//         else{
+//             printf("  ");
+//         }
+//         printf("\n");
+//     }
+// }
+//          * 
+//         * *
+//        *   *
+//       *     *
+//      *       *
+//     *         *
+//    *           *
+//   *             *
+//  *               *
+// * * * * * * * * * *
+
+//--------------------------------------------------
+
+// Hollow Star Pyramid Pattern
+// Star Pattern
+
 int main(){
-    int num = 10;
+    int num = 12;
     for(int i = 1;i<=num;i++){
-        for(int j = 10;j>i;j--)
+        for(int j = num;j>i;j--)
         printf(" ");
 
         for(int k = 1;k<=i;k++)
-            if(k == 1 || k == i || i == num){
-            printf("* ");
+        if(k == 1 || k == i ){
+        printf("%d ",k);
+         sleep(1);
         }
         else{
             printf("  ");
         }
         printf("\n");
     }
-}
+    for(int i = num-1;i>=1;i--){
+        for(int j = i;j<=num-1;j++)
+        printf(" ");
+
+        for(int k = 1;k<=i;k++)
+        if(k == 1 || k == i ){
+        printf("%d ",k);
+        sleep(1);
+        }
+        else{
+            printf("  ");
+        }
+        printf("\n");
+    }
+    }
