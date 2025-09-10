@@ -406,37 +406,61 @@
 
 //--------------------------------------------------
 
-// Hollow Star Pyramid Pattern
-// Star Pattern
+// Hollow Star Diamond Pattern
+// Diamond Star Pattern
 
-int main(){
-    int num = 12;
-    for(int i = 1;i<=num;i++){
-        for(int j = num;j>i;j--)
-        printf(" ");
+// int main(){
+//     int num = 12;
+//     for(int i = 1;i<=num;i++){
+//         for(int j = num;j>i;j--)
+//         printf(" ");
 
-        for(int k = 1;k<=i;k++)
-        if(k == 1 || k == i ){
-        printf("%d ",k);
-         sleep(1);
-        }
-        else{
-            printf("  ");
-        }
-        printf("\n");
-    }
-    for(int i = num-1;i>=1;i--){
-        for(int j = i;j<=num-1;j++)
-        printf(" ");
+//         for(int k = 1;k<=i;k++)
+//         if(k == 1 || k == i ){
+//         printf("%d ",k);
+//          sleep(1);
+//         }
+//         else{
+//             printf("  ");
+//         }
+//         printf("\n");
+//     }
+//     for(int i = num-1;i>=1;i--){
+//         for(int j = i;j<=num-1;j++)
+//         printf(" ");
 
-        for(int k = 1;k<=i;k++)
-        if(k == 1 || k == i ){
-        printf("%d ",k);
-        sleep(1);
-        }
-        else{
-            printf("  ");
-        }
-        printf("\n");
-    }
-    }
+//         for(int k = 1;k<=i;k++)
+//         if(k == 1 || k == i ){
+//         printf("%d ",k);
+//         sleep(1);
+//         }
+//         else{
+//             printf("  ");
+//         }
+//         printf("\n");
+//     }
+//     }
+//            1 
+//           1 2 
+//          1   3 
+//         1     4 
+//        1       5 
+//       1         6 
+//      1           7 
+//     1             8 
+//    1               9 
+//   1                 10 
+//  1                   11 
+// 1                     12 
+//  1                   11 
+//   1                 10 
+//    1               9 
+//     1             8 
+//      1           7 
+//       1         6 
+//        1       5 
+//         1     4 
+//          1   3 
+//           1 2 
+//            1 
+
