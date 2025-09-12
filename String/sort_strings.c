@@ -3,11 +3,11 @@
 
 int main(){
     char arr[4][10] = {"noy","rawlin","shello","ashutosh"};
-    
+    char arr2[10];
     for(int i =0;i<3;i++){
-        char arr2[10];
-        for(int j =0;j<4;j++){
-            if(arr[i][0] > arr[j][0]){
+        
+        for(int j =i+1;j<4;j++){
+            if(strncmp(arr[i] ,arr[j],1)>0){
                 strcpy(arr2, arr[i]);
                 strcpy(arr[i], arr[j]);
                 strcpy(arr[j], arr2);
