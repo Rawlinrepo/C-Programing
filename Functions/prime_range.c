@@ -4,12 +4,12 @@ void prime_range(int num1, int num2){
     int cnt;
     for(int i=num1;i<=num2;i++){
         cnt=0;
-        for(int j=num1;j<=num1;j++){
-            if(j % 2 == 0){
+        for(int j = 2;j<=i;j++){
+            if(i % j == 0){
                 cnt++;
             }
         }
-        if(cnt <= 1){
+        if(cnt < 2){
         printf("%d\n",i);
         }
     }

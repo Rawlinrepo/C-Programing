@@ -5,12 +5,12 @@ void prime(int num)
     int cnt = 0;
     for (int i = 1; i <= num; i++)
     {
-        if (num % 2 == 0)
+        if (num % i == 0)
         {
             cnt++;
         }
     }
-    if (cnt == 1)
+    if (cnt <3)
     {
         printf("%d is prime", num);
     }
