@@ -16,7 +16,7 @@ void showStudents(struct student s[], int count) {
 
 int main() {
     char opt[5] = {0};
-    int i = 4;  // already have 4 students
+    int i = 4;
     int max = 100;
 
     struct student s[100] = {
@@ -83,6 +83,45 @@ int main() {
             printf("Sorted by name!\n");
             showStudents(s, i);
             break;
+        case '6':
+        int num;
+        printf("Select by which choice to sort");
+        printf("1.Roll no");
+        printf("2.Class");
+        scanf("%d",&num);
+        switch (num)
+        {
+        case 1:
+        for(int j = 0;j<i;j++){
+            for(int k =0;k<i;k++){
+                if(s[k].rollno < s[k+1].rollno){
+                    struct student temp = s[k];
+                    s[k] = s[k+1];
+                    s[k+1] = temp; 
+                    
+                }
+            }
+        }
+        showStudents(s, i);
+            break;
+        case 2:
+        for(int j = 0;j<i;j++){
+            for(int k =0;k<i;k++){
+                if(s[k].class < s[k+1].class){
+                    struct student temp = s[k];
+                    s[k] = s[k+1];
+                    s[k+1] = temp; 
+                    
+                }
+            }
+        }
+        showStudents(s, i);
+            break;
+        
+        default:
+            break;
+        }
+        break;
 
         default:
             break;
